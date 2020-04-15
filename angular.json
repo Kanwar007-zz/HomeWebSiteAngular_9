@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Home-Angular-Nine-webSite": {
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Home-Angular-Nine-webSite"
+    }
+  },
+  "defaultProject": "Home-Angular-Nine-webSite",
+  "cli": {
+    "analytics": "e51c86d8-1c98-43d4-9663-388ec0fa3106"
+  }
 }
