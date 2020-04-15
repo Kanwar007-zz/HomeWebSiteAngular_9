@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 15 2020 16:27:50 GMT+0800 (Australian Western Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/register-user/register-user.component.html
+* src/app/register-user/register-user.component.ts
+
+
+Created files:
+* .autogit/logs/log-15-3-2020-15-57-18.txt
+
+
+Deleted files:
+
+
+Renamed files:

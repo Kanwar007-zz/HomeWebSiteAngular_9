@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { SuccessComponent } from './success/success.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,10 @@ const routes: Routes = [
      path:'register',
      component:RegisterUserComponent
   },
+  {
+    path:'sucess',
+    component:SuccessComponent
+ },
   {
     path:'**',
     component: NoPageFoundComponent

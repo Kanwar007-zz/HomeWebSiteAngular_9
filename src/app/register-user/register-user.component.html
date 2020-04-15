@@ -11,44 +11,48 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input required ngModel id="webUser" name="webUser" #webUser="ngModel" type="text" class="form-control" placeholder="Your Web Name *" value=""/>
-                                <div class="alert alert-danger" *ngIf="!webUser.valid"> webUser is required </div>
+                                <div class="alert alert-danger" *ngIf="webUser.touched && !webUser.valid"> webUser is required </div>
                             </div>
                             
                             <div class="form-group">
                                 <input required ngModel id="password" name="password"  #password="ngModel" type="text" class="form-control" placeholder="Your Password *" value=""/>
-                                <div class="alert alert-danger" *ngIf="!password.valid"> password is required </div>
+                                <div class="alert alert-danger" *ngIf="password.touched && !password.valid"> password is required </div>
                             </div>
                             <div class="form-group">
                                 <input  required ngModel id="confirmPassword" name="confirmPassword" #confirmPassword="ngModel" type="text" class="form-control" placeholder="Confirm Password *" value=""/>
-                                <div class="alert alert-danger" *ngIf="!confirmPassword.valid"> confirmPassword is required </div>
+                                <div class="alert alert-danger" *ngIf="confirmPassword.touched && !confirmPassword.valid"> confirmPassword is required </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div ngModelGroup="contact" #contact="ngModelGroup">
                             <div class="form-group">
-                                <input required ngModel id="firstName" name="firstName" #firstName="ngModel" type="text" class="form-control" placeholder=" First Name" value=""/>
-                                <div class="alert alert-danger" *ngIf="!firstName.valid"> First name is required </div>
+                                <input required ngModel id="firstName" name="firstName" #firstName="ngModel" type="text" 
+                                class="form-control" placeholder=" First Name" value=""/>
+                                <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid"> First name is required </div>
                             </div>
                             <div class="form-group">
-                                <input required  id="lastName" name="lastName" #lastName="ngModel" type="text" class="form-control" placeholder="last Name" value=""/>
-                                <div class="alert alert-danger" *ngIf="!firstName.valid"> First name is required </div>
+                                <input required ngModel id="lastName" name="lastName" #lastName="ngModel" type="text"
+                                 class="form-control" placeholder="last Name" value=""/>
+                                <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid"> last name is required </div>
                             </div>
                             <div class="form-group">
-                                <input ngModel id="phoneNumber" name="phoneNumber" #phoneNumber="ngModel" type="text" class="form-control" placeholder="Phone Number *" value=""/>
-                                <div class="alert alert-danger" *ngIf="!lastName.valid"> last nameis required </div>
+                                <input  required ngModel id="phoneNumber" name="phoneNumber" #phoneNumber="ngModel" type="text" 
+                                class="form-control" placeholder="Phone Number" value=""/>
+                                <div class="alert alert-danger" *ngIf="phoneNumber.touched && !phoneNumber.valid"> phoneNumber is required </div>
                             </div>
                             <div class="form-group">
-                                <input required ngModel id="email" name="email" type="text" #email="ngModel" class="form-control" placeholder="Email Address" value=""/>
-                                <div class="alert alert-danger" *ngIf="!email.valid"> email is required </div>
+                                <input required ngModel id="email" name="email" type="text" #email="ngModel" 
+                                class="form-control" placeholder="Email Address" value=""/>
+                                <div class="alert alert-danger" *ngIf="email.touched && !email.valid"> email is required </div>
                             </div>
                             <div class="form-group">
                                 <input required ngModel id="address" name="address" type="text" #address="ngModel" class="form-control" placeholder="Contact Address" value=""/>
-                                <div class="alert alert-danger" *ngIf="!address.valid"> address is required </div>
+                                <div class="alert alert-danger" *ngIf="address.touched && !address.valid"> address is required </div>
                             </div> 
                         </div>
                         </div>
                     </div>
-                    <button type="submit" class="btnSubmit">Submit</button>
+                    <button type="submit" class="btnSubmit" [disabled]="!f.valid">Submit</button>
                 </div>
             </div>
         </div>

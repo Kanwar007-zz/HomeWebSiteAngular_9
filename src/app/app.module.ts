@@ -14,6 +14,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ProductDetailsService } from './services/product-details.service';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegisterUserComponent } from './register-user/register-user.component';
     ProductsComponent,
     ProductDetailsComponent,
     NoPageFoundComponent,
-    RegisterUserComponent
+    RegisterUserComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
