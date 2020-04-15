@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Apr 15 2020 15:27:08 GMT+0800 (Australian Western Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/login/login.component.html
+* src/app/register-user/register-user.component.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
