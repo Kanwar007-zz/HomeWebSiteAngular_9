@@ -12,8 +12,8 @@ export class RegisterUserComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onSubmit(f: NgForm){
-    console.log('submit'+f);
+  onSubmit(f){
+    console.log(f.value);
   }
 
 }
