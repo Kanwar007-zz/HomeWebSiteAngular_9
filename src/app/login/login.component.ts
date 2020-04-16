@@ -11,9 +11,9 @@ export class LoginComponent  {
 
   loginForm = new FormGroup(
             {
-              username:new FormControl(),
-              password: new FormControl(),
-              'remember-me': new FormControl()
+              username: new FormControl('',Validators.required),
+              password: new FormControl('',Validators.required),
+              'rememberme': new FormControl('')
             }
   );
  
@@ -22,6 +22,8 @@ export class LoginComponent  {
   
 
   onSubmit(){
-    console.log(this.loginForm.value);
+    console.log(this.loginForm.value.username);
+    console.log(this.loginForm.value.password);
+    console.log(this.loginForm.value.rememberme);
   }
 }
